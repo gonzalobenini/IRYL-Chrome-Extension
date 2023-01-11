@@ -1,0 +1,25 @@
+{
+   "action": {
+      "default_icon": "iconMIC.png",
+      "default_popup": "appMenu.html"
+   },
+   "background": {
+      "service_worker": "eventPage.js"
+   },
+   "content_scripts": [ {
+      "js": [ "script.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Helps you to learn a language by telling you its correct pronunciation.",
+   "differential_fingerprint": "1.1dd48a60ba060796b9b458b5603ec28a73ba5ee48221f282c1273469a586a0a7",
+   "icons": {
+      "128": "iconMIC.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsX/XCAZruEsEJ+hBWh7YkgTAsDcmVpigxhQ+4gnu1vrSiRcQG/7o4wUgOipj+Hk1YEOKUel2O+E7813krYnkGGOs5SK9FDYNBEcFlR6dAImi2FNJGU0f/VQGUovvcMXS5PtNgeWU3WHwWAeR2y0IG60Ou84Ne6IaQOk/ggRK0+pRqAjWQO7qGV4IsWLxjYph1PVD6oAwWB26i7vYPY3dx/+ADwk+eaxZFSqAnkFlZ/4J/FcCbJ/rSs03P9U7MbGdnKeKxsjoemwToxnDx7aOOdlytCGujLJvsQ7HZ8Smt968VngiNxtCO8C6NZftV2ClL3PikjoqaXotLQDahHW4oQIDAQAB",
+   "manifest_version": 3,
+   "name": "I read your language",
+   "permissions": [ "contextMenus", "storage", "activeTab", "tts" ],
+   "short_name": "IRYL",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2"
+}
